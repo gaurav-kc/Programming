@@ -1,7 +1,17 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+/*
+    My approach involes creating a 2D array.
+    I imagine this problem as peak finding problem and visualize solution for an element as maximum product of indices of
+    it's immeidate left and right peak (if exists)
+    row 0 - Value of immediate left peak
+    row 1 - Index of immediate left peak
+    row 2 - Value of immediate right peak
+    row 3 - Index of immediate right peak
+    The 2 while loops show the 2 iterations over the input. First goes from left to right storing immediate left peak info 
+    and second from right to left storing immediate right peaks info.
+*/
 vector<string> split_string(string);
 
 // Complete the solve function below.
